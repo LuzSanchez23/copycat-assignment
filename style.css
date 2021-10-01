@@ -81,8 +81,8 @@ body{
   
   .footer{
     height: auto;
-    background-color: #222;
-    color: orange;
+    background-color: rgb(105, 104, 104);
+    color: rgb(80, 25, 70);
     text-align: center;
     position: fixed;
     bottom: 0px;
