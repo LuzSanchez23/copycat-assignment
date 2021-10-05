@@ -1,70 +1,49 @@
 .containerone {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: flex-start;
     background-color: pink;
-    justify-content:flex-end;
-    align-content: center;
-    height: 100px;
 }
 .flexthree {
     -webkit-animation:spin 4s linear infinite;
-    -moz-animation:spin 4s linear infinite;
-    animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
 }
-.flex-item flexfourth {
+.flexfourth {
     display: flex;
-   align-items: flex-start;
-
-    
+    justify-content: flex-end;
+    flex-grow: 2;
+    flex-shrink: 1;
 }
 .containerone img {
-height: 80px;
+    width: 60px;
 }
-
+.containertwo img {
+    height: 40px;
+}
 .containertwo {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    background-color: rgb(99, 2, 18);
-    width: 300px;
+    background-color: rgb(80, 25, 70);
+    height: 400px;
+    width: 200px;
+    background-image: url('images/coin.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
-.containertwo img {
-    width: 80px;
-    }
-
-.flexfive img{
-width: 200px;
-align-self: center;
-flex-grow: 2;
-
-
+.flexfive, .flexsix, .flexseven {
+  display: flex;
+  justify-content: center;
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+  flex-shrink: 1;
 }
-.flexsix img, .flexseven img, .flexeight img{
-    width: 30px;
-    -webkit-animation:spin 4s linear infinite;
-    -moz-animation:spin 4s linear infinite;
-    animation:spin 4s linear infinite;
-    position:static;
-    
-
-}
-
 
     @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
     @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
     @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
     
-
-
-
-
-
-
-
-
-
-
 
     .footer{
         height: auto;
